@@ -1,106 +1,70 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Automation Tool Test Case Report - testcase1</title>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
 </head>
 <body>
-
-			<div class="box">
-			<h1><img class="tc" alt="collapse" src="images/sub.jpg"/>ini</h1>
-			<div class="togglepoint">
-			<table border="1" width="90%" cellpadding="3" cellspacing="0" summary="">
-				<tr bgcolor="#ccccff">
-				<th align="left" colspan="3">
-				<font size="+2"><b>Test.ini</b></font>
-				</th>
-				</tr>
-				
-				<tr bgcolor="#eeeeee">
-				<th>key</th>
-				<th>expected</th>
-				<th>status</th>
-				</tr>
-				
-				<tr bgcolor="white">
-				<td width="20%"><b>db.status</b></td>
-				<td>updated</td>
-				<td><img alt="fail" src="images/succ.jpg"/></td>
-				</tr>
-				
-				<tr bgcolor="white">
-				<td width="20%"><b>db.updatetime</b></td>
-				<td>20120713.123456</td>
-				<td><img alt="fail" src="images/succ.jpg"/></td>
-				</tr>
-			
-			</table>
-			</div>
-			</div>
-			
-			<div class="box">
-			<h1><img class="tc" alt="collapse" src="images/sub.jpg"/>db</h1>
-			<div class="togglepoint">
-			<table border="1" width="90%" cellpadding="3" cellspacing="0" summary="">
-				<tr bgcolor="#ccccff" class="head">
-				<th align="left" colspan="3">
-				<font size="+2"><b>log.db</b></font>
-				</th>
-				</tr>
-				
-				<tr bgcolor="#eeeeee">
-				<th>key</th>
-				<th>expected</th>
-				<th>status</th>
-				</tr>
-				
-				<tr bgcolor="white">
-				<td width="20%"><b>db.status</b></td>
-				<td>updated</td>
-				<td><img alt="fail" src="images/succ.jpg"/></td>
-				</tr>
-				
-				<tr bgcolor="white">
-				<td width="20%"><b>db.updatetime</b></td>
-				<td>20120713.123456</td>
-				<td><img alt="fail" src="images/succ.jpg"/></td>
-				</tr>
-			
-			</table>
-			</div>
-			</div>
-			
-			
-			<div class="box">
-			<h1><img class="tc" alt="collapse" src="images/sub.jpg"/>xml</h1>
-			<div class="togglepoint">
-			<table border="1" width="90%" cellpadding="3" cellspacing="0" summary="">
-				<tr bgcolor="#ccccff" class="head">
-				<th align="left" colspan="3">
-				<font size="+2"><b>strings.xml</b></font>
-				</th>
-				</tr>
-				
-				<tr bgcolor="#eeeeee">
-				<th>key</th>
-				<th>expected</th>
-				<th>status</th>
-				</tr>
-				
-				<tr bgcolor="white">
-				<td width="20%"><b>db.status</b></td>
-				<td>updated</td>
-				<td><img alt="fail" src="images/succ.jpg"/></td>
-				</tr>
-				
-				<tr bgcolor="white">
-				<td width="20%"><b>db.updatetime</b></td>
-				<td>20120713.123456</td>
-				<td><img alt="fail" src="images/succ.jpg"/></td>
-				</tr>
-			</table>
-			</div>
-			</div>
-
+<div class="box">
+<h1>
+<img class="tc" alt="collapse" src="images/sub.jpg">ini</h1>
+<div class="togglepoint">
+<table border="1" width="100%" cellpadding="3" cellspacing="0" summary="">
+<tr bgcolor="#ccccff">
+<th align="left" colspan="3"><font size="+2"><b>xxxx.ini</b></font></th>
+</tr>
+<tr bgcolor="#eeeeee">
+<th>key</th><th>expected</th><th>status</th>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b>ini.status</b></td><td>updated</td><td><img alt="succ" src="images/succ.jpg"></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b>ini.updatetime</b></td><td>20120713.123456</td><td><img alt="fail" src="images/fail.jpg">20120712.123456</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="box">
+<h1>
+<img class="tc" alt="collapse" src="images/sub.jpg">ini</h1>
+<div class="togglepoint">
+<table border="1" width="100%" cellpadding="3" cellspacing="0" summary="">
+<tr bgcolor="#ccccff">
+<th align="left" colspan="3"><font size="+2"><b>oooo.ini</b></font></th>
+</tr>
+<tr bgcolor="#eeeeee">
+<th>key</th><th>expected</th><th>status</th>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b>ini.status2</b></td><td>updated</td><td><img alt="succ" src="images/succ.jpg"></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b>ini.updatetime2</b></td><td>20120713.123456</td><td><img alt="fail" src="images/fail.jpg">20120712.123456</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="box">
+<h1>
+<img class="tc" alt="collapse" src="images/sub.jpg">db</h1>
+<div class="togglepoint">
+<table border="1" width="100%" cellpadding="3" cellspacing="0" summary="">
+<tr bgcolor="#ccccff">
+<th align="left" colspan="3"><font size="+2"><b>xxxx.db</b></font></th>
+</tr>
+<tr bgcolor="#eeeeee">
+<th>key</th><th>expected</th><th>status</th>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b>db.status</b></td><td>updated</td><td><img alt="succ" src="images/succ.jpg"></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b>db.updatetime</b></td><td>20120713.123456</td><td><img alt="fail" src="images/fail.jpg">20120712.123456</td>
+</tr>
+</table>
+</div>
+</div>
 </body>
 </html>

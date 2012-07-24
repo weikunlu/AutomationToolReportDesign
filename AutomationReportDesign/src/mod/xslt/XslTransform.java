@@ -176,7 +176,11 @@ public class XslTransform {
 	}
 	
 	/**
-	 * @param args
+	 * execute step:
+	 * 1. java -jar xslt.jar ./report/tmp
+	 * 2. java -jar xslt.jar ./report/tmp 1
+	 * 
+	 * @param args [0]:template path; [1]:overview flag
 	 */
 	public static void main(String[] args) {
 

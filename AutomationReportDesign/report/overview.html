@@ -1,24 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-
 <html>
 <head>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Automation Tool Test Case Report</title>
 <link rel="stylesheet" type="text/css" href="css/report.css">
-<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
-<script type="text/javascript" language="JavaScript">
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script><script type="text/javascript" language="JavaScript">
 function registerToggle(){
-	/*
-	$('.tc').bind('click', function(){
-		if($(this).attr('src')=='images/sub.jpg'){
-			$(this).attr('src', 'images/add.jpg');
-			$(this).parent().parent().find('table').hide();
-		}else{
-			$(this).attr('src', 'images/sub.jpg');
-			$(this).parent().parent().find('table').slideDown('slow');
-		}
-	});
-	*/
 	$('.tc').bind('click', function(){
 		$(this).parent().parent().find('div').slideToggle('slow');
 	});
@@ -56,13 +43,13 @@ $(document).ready(function() {
 <div class="box">
 <ul class="list">
 <li class="first">
-<img src="images/testcase_pass.jpg"/><a href="#1" id="testcase1">testcase1</a>
+<img src="images/testcase_fail.jpg"><a href="#1" id="testcase1">testcase1</a>
 </li>
 <li>
-<img src="images/testcase_fail.jpg"/><a href="#2" id="testcase2">testcase2</a>
+<img src="images/testcase_fail.jpg"><a href="#2" id="testcase2">testcase2</a>
 </li>
 <li class="last">
-<img src="images/testcase_fail.jpg"/><a href="#3" id="testcase3">testcase3</a>
+<img src="images/testcase_pass.jpg"><a href="#3" id="testcase3">testcase3</a>
 </li>
 </ul>
 </div>
