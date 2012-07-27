@@ -14,6 +14,11 @@
 function registerToggle(){
 	$('.tc').bind('click', function(){
 		$(this).parent().parent().find('div').slideToggle('slow');
+		if($(this).attr('src') == 'images/sub.jpg'){
+			$(this).attr('src', 'images/add.jpg');
+		}else{
+			$(this).attr('src', 'images/sub.jpg');
+		}
 	});
 	$('.togglepoint').hide();
 	$('.togglepoint').slideDown('fast');

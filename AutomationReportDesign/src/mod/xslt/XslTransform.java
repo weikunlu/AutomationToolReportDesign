@@ -2,6 +2,8 @@ package mod.xslt;
 
 import java.io.File;
 import java.io.FilenameFilter;
+import java.util.Arrays;
+import java.util.Comparator;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -98,6 +100,13 @@ public class XslTransform {
 			}
 		});
 
+		//sort file object using tree
+		Arrays.sort(xmlFiles, new Comparator<File>() {
+			public int compare(File o1, File o2) {
+				return o1.getName().compareTo(o2.getName());
+			};
+		});
+		
 		//Declare file output location and create content from xmlFiles array variable
 		File outFile = new File(XSL_PATH, "overview.xml");
 		DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
@@ -151,7 +160,7 @@ public class XslTransform {
 		});
 		for (File file : xmlFiles) {
 			System.out.println(file.getAbsolutePath());
-			//file.delete();
+			file.delete();
 		}
 	}
 
@@ -176,10 +185,13 @@ public class XslTransform {
 	}
 	
 	/**
-	 * execute step:
-	 * 1. java -jar xslt.jar ./report/tmp
-	 * 2. java -jar xslt.jar ./report/tmp 1
-	 * 
+	 * execute step:<br>
+	 * <p>1. java -jar xslt.jar ./report/tmp	</p>
+	 * <p>2. java -jar xslt.jar ./report/tmp 1	
+	 * <ol style="list-style-type: lower-roman">
+	 * <li>this step will clear all used XML files</li>
+	 * </ol>
+	 * </p>
 	 * @param args [0]:template path; [1]:overview flag
 	 */
 	public static void main(String[] args) {
